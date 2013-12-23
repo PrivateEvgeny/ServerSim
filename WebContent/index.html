@@ -1,0 +1,120 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<SCRIPT language="JavaScript" src="ajax2.js"></SCRIPT>
+<title>Title</title>
+
+<style type="text/css">
+.block1 {
+	width: 350px;
+	background: #ccc;
+	padding: 5px;
+	padding-right: 20px;
+	border: solid 1px black;
+	float: left;
+}
+
+.block2 {
+	 
+    width: 200px; 
+    background: #ccc; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: -100px; 
+    left: 25px; 
+   }
+   
+   
+   .block3 {
+	 
+    width: 200px; 
+    background: #ccc; 
+    padding: 5px; 
+    border: solid 1px black; 
+    float: left; 
+    position: relative; 
+    top: -40px; 
+    left: -187px; 
+   }
+}
+
+</style>
+
+
+</head>
+<body onload="focusIn( );">
+	
+	<h2>VM SIM</h2>
+	<table>
+		<tr>
+		<td>
+				<input value="start 2 sek" onclick="start();" type="button" />
+				<input value="restart" onclick="restart();" type="button" />
+							</td>
+		</tr>
+		
+		<tr>
+		<td>
+				<input value="advm # " onclick="addvm();" type="button" />
+				<input type="text" id="key2" name="key2">
+			</td>
+		</tr>
+		<tr>
+		<td>
+				<input value="migrate vm # " onclick="migrate();" type="button" />
+				<input type="text" id="key4" name="key4">
+				to server # 
+				<input type="text" id="key5" name="key5">
+			</td>
+		</tr>
+		<tr>
+		<td>
+				<input value="select server # # " onclick="selectsrv();" type="button" />
+				<input type="text" id="key3" name="key3">
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Free command: -> <input type="text" id="key" name="key">
+
+				<input value="add" onclick="convertToDecimal( );" type="button" />
+			
+			</td>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</tr>
+	</table>
+	<br />
+	<table>
+		<tr>
+			
+		</tr>
+		<tr>
+			
+		</tr>
+		<tr>
+			<td><input type="text" readonly id="demical"></td>
+		</tr>
+	</table>
+
+
+
+	<div class="block1" id="block1">Lorem ipsum dolor sit amet,
+		consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt
+		ut lacreet dolore magna aliguam erat volutpat.</div>
+
+<div class="block2" id="block2">Lorem ipsum dolor sit </div>
+
+<div class="block3" id="block3">Serverifno </div>
+
+</body>
+</html>
